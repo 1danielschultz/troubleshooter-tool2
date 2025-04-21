@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { TroubleshooterProvider } from './context/TroubleshooterContext';
 import GlobalStyles from './styles/GlobalStyles';
 import TroubleshooterPage from './pages/TroubleshooterPage';
@@ -9,10 +9,11 @@ function App() {
   return (
     <TroubleshooterProvider>
       <GlobalStyles />
-      <Router>
+      <Router basename="/">
         <Routes>
-          <Route path="/" element={<TroubleshooterPage />} />
+          <Route exact path="/" element={<TroubleshooterPage />} />
           <Route path="/adminpanel" element={<AdminPanel />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Router>
     </TroubleshooterProvider>

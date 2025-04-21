@@ -2,7 +2,7 @@
   "name": "troubleshooter-tool-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://1danielschultz.github.io/troubleshooter-tool2",
+  "homepage": "https://1danielschultz.github.io/troubleshooter-tool2/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
