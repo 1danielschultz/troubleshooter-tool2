@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { TroubleshooterProvider } from './context/TroubleshooterContext';
 import GlobalStyles from './styles/GlobalStyles';
 import TroubleshooterPage from './pages/TroubleshooterPage';
